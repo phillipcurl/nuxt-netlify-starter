@@ -1,5 +1,5 @@
 {
   "name": "nuxt-netlify-starter",
   "description": "A starter template for building statically-generated Nuxt.js sites with a Netlify CMS backend.",
-  "icon": "/icon.png"
+  "icon": "/images/uploads/download.png"
 }
