@@ -1,3 +1,5 @@
+<p><img align="left" style="width:250px" src="./static/images/uploads/download.png"/></p><br/>
+
 # nuxt-netlify-starter
 
 > A starter template for building statically-generated Nuxt.js sites with a Netlify CMS backend.
