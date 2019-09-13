@@ -4,7 +4,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/614f215c-bfbe-440c-94c2-2b2ecd837cd0/deploy-status)](https://app.netlify.com/sites/nuxt-netlify-starter/deploys)
 
-This project is essentially a base Nuxt.js app, created using `create-nuxt-app`, with the addition of basic Netlify CMS configuration.
+This project is essentially a base Nuxt.js app, created using `create-nuxt-app`, with the addition of basic Netlify CMS configuration. It scores 100% in all Lighthouse categories and should be a good jumping off point for projects.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit)
 
