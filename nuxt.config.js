@@ -59,7 +59,8 @@ export default {
 
   pwa: {
     icons: {
-      iconSrc: siteInfo.icon
+      iconSrc: siteInfo.icon.substring(0, siteInfo.icon.lastIndexOf('/')),
+      iconFileName: siteInfo.icon.replace(/^.*[\\\/]/, '')
     },
     manifest: {
       name: siteInfo.name,

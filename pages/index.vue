@@ -1,12 +1,26 @@
 <template>
-	<div class="container">
+	<div class="home-page">
 		<div>
-			<img :src="siteInfo.icon" :alt="`${siteInfo.name} icon`" class="icon" />
-			<h1 class="title">{{siteInfo.name}}</h1>
-			<h2 class="subtitle">{{siteInfo.description}}</h2>
-			<div class="links">
-				<a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-				<a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+			<img :src="siteInfo.icon" :alt="`${siteInfo.name} icon`" />
+			<h1>{{siteInfo.name}}</h1>
+			<h2>{{siteInfo.description}}</h2>
+			<div class="home-page__links">
+				<a
+					href="https://github.com/phillipcurl/nuxt-netlify-starter"
+					target="_blank"
+					rel="noopener noreferrer"
+				>Project Documentation</a>
+				<a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">Nuxt.js Documentation</a>
+				<a
+					href="https://github.com/nuxt/nuxt.js"
+					target="_blank"
+					class="button--grey"
+				>Netlify Documentation</a>
+				<a
+					href="https://github.com/nuxt/nuxt.js"
+					target="_blank"
+					class="button--grey"
+				>Netlify CMS Documentation</a>
 			</div>
 		</div>
 	</div>
@@ -24,40 +38,38 @@ export default {
 </script>
 
 <style>
-.container {
-	margin: 0 auto;
-	min-height: 100vh;
+.home-page {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 	text-align: center;
 }
-
-.title {
-	font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-		"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	display: block;
-	font-weight: 300;
-	font-size: 100px;
-	color: #35495e;
-	letter-spacing: 1px;
+.home-page h1 {
+	font-size: 4.5rem;
+	margin: 2rem 0;
 }
-
-.icon {
+.home-page h2 {
+	width: 100%;
+	max-width: 35rem;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.home-page img {
 	max-width: 250px;
 	width: 100%;
 	margin: 0 auto;
 }
-
-.subtitle {
-	font-weight: 300;
-	font-size: 42px;
-	color: #526488;
-	word-spacing: 5px;
-	padding-bottom: 15px;
+.home-page__links {
+	display: flex;
+	/* flex-direction: column; */
 }
-
-.links {
-	padding-top: 15px;
+.home-page__links a {
+	text-align: left;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+.home-page__links a:hover {
+	text-decoration: underline;
 }
 </style>

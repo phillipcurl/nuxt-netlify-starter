@@ -39,7 +39,7 @@ For a detailed explanation of how things work, check out the [Nuxt.js docs](http
 
 Once you have your project deployed to Netlify, you will have to enable Netlify Identity and Git Gateway in order to login to `https://{YOUR-SITE}.netlify.com/admin` and manage content in the CMS. Follow the steps below to do that.
 
-- Enable Netlift Identity: https://www.netlify.com/docs/identity/
+- Enable Netlify Identity: https://www.netlify.com/docs/identity/
 - Set registration preferences: https://app.netlify.com/sites/{YOUR-SITE-NAME}/settings/identity#registration
   - I end up setting this to invite only in 99% of use-cases for this starter template.
 - Enable Git Gateway: https://app.netlify.com/sites/{YOUR-SITE-NAME}/settings/identity#services
