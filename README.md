@@ -1,4 +1,5 @@
-<p><img align="left" style="width:250px" src="./static/images/uploads/download.png"/></p><br/>
+<div>
+<br /><img src="./static/images/uploads/download.png" width="250"></div><br />
 
 # nuxt-netlify-starter
 
