@@ -51,6 +51,9 @@ export default {
 	min-height: 100vh;
 	text-align: center;
 }
+.home-page > div {
+	padding: 1.5rem;
+}
 .home-page h1 {
 	font-size: 4.5rem;
 	margin: 2rem 0;
@@ -67,8 +70,14 @@ export default {
 	margin: 0 auto;
 }
 .home-page__links {
-	/* display: flex; */
-	/* flex-direction: column; */
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+	.home-page__links {
+		display: flex;
+		flex-direction: row;
+	}
 }
 .home-page__links a {
 	text-align: left;
