@@ -14,6 +14,7 @@ export default {
   mode: 'universal',
 
   head: {
+    lang: 'en',
     title: siteInfo.name,
     meta: [
       { charset: 'utf-8' },
