@@ -1,7 +1,7 @@
-var siteInfo = require('./content/setup/config.json');
+const siteInfo = require('./content/setup/config.json');
 console.log(siteInfo);
-var glob = require('glob');
-var path = require('path');
+const glob = require('glob');
+const path = require('path');
 
 // Enhance Nuxt's generate process by gathering all content files from Netifly CMS
 // automatically and match it to the path of your Nuxt routes.
@@ -55,9 +55,9 @@ export default {
   },
 
   pwa: {
-    icons: {
-      iconSrc: siteInfo.icon.substring(0, siteInfo.icon.lastIndexOf('/')),
-      iconFileName: siteInfo.icon.replace(/^.*[\\\/]/, '')
+    icon: {
+      iconSrc: `./static/${siteInfo.icon}`
+      // iconFileName: siteInfo.icon.replace(/^.*[\\\/]/, '')
     },
     manifest: {
       name: siteInfo.name,
