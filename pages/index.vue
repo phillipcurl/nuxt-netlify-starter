@@ -12,13 +12,15 @@
 				>Project Documentation</a>
 				<a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">Nuxt.js Documentation</a>
 				<a
-					href="https://github.com/nuxt/nuxt.js"
+					href="https://www.netlify.com/docs/"
 					target="_blank"
+					rel="noopener noreferrer"
 					class="button--grey"
 				>Netlify Documentation</a>
 				<a
-					href="https://github.com/nuxt/nuxt.js"
+					href="https://www.netlifycms.org/docs/intro/"
 					target="_blank"
+					rel="noopener noreferrer"
 					class="button--grey"
 				>Netlify CMS Documentation</a>
 			</div>
