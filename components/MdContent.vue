@@ -1,9 +1,18 @@
 <template >
-	<div class="md-content" v-html="$md.render(content)"></div>
+	<div :class="{'md-content' : shouldStyle}" v-html="$md.render(content)"></div>
 </template>
 <script>
 export default {
-	props: ["content"]
+	props: {
+		content: {
+			type: String,
+			required: true
+		},
+		shouldStyle: {
+			type: Boolean,
+			default: true
+		}
+	}
 };
 </script>
 <style>
