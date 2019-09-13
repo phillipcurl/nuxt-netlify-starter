@@ -44,7 +44,7 @@ Once you have your project deployed to Netlify, you will have to enable Netlify 
 
 - Enable Netlify Identity: https://www.netlify.com/docs/identity/
 - Set registration preferences: https://app.netlify.com/sites/{YOUR-SITE-NAME}/settings/identity#registration
-  - I end up setting this to invite only in 99% of use-cases for this starter template.
+  - I end up setting this to invite-only in 99% of use-cases for this starter template.
 - Enable Git Gateway: https://app.netlify.com/sites/{YOUR-SITE-NAME}/settings/identity#services
 - You can now invite users, and they will be able to login to the CMS at `https://{YOUR-SITE}.netlify.com/admin`
 
