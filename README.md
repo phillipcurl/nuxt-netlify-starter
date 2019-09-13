@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 
@@ -20,3 +20,9 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Configuring Netlify
+
+- Enable identity
+- Set registration preferences: https://app.netlify.com/sites/nuxt-netlify-starter/settings/identity#registration
+- Enable Git Gateway: https://app.netlify.com/sites/nuxt-netlify-starter/settings/identity#services

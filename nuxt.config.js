@@ -13,10 +13,6 @@ const dynamicRoutes = getDynamicPaths({
 export default {
   mode: 'universal',
 
-  env: {
-    API_URL: process.env.API_URL
-  },
-
   head: {
     title: siteInfo.name,
     meta: [
@@ -61,27 +57,31 @@ export default {
     html: true
   },
 
-  manifest: {
-    name: siteInfo.name,
-    short_name: siteInfo.name,
-    description: siteInfo.description,
-    lang: 'en'
-  },
-
-  workbox: {
-    runtimeCaching: [
-      {
-        urlPattern: '/images/uploads/.*',
-        handler: 'cacheFirst',
-        strategyOptions: {
-          cacheName: 'image-cache',
-          cacheExpiration: {
-            maxEntries: 100,
-            maxAgeSeconds: 86400
+  pwa: {
+    icons: {
+      iconSrc: siteInfo.icon
+    },
+    manifest: {
+      name: siteInfo.name,
+      short_name: siteInfo.name,
+      description: siteInfo.description,
+      lang: 'en'
+    },
+    workbox: {
+      runtimeCaching: [
+        {
+          urlPattern: '/images/uploads/.*',
+          handler: 'cacheFirst',
+          strategyOptions: {
+            cacheName: 'image-cache',
+            cacheExpiration: {
+              maxEntries: 100,
+              maxAgeSeconds: 86400
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   },
 
   /*

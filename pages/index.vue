@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<div>
-			<logo />
+			<img :src="siteInfo.icon" :alt="`${siteInfo.name} icon`" class="icon" />
 			<h1 class="title">{{siteInfo.name}}</h1>
 			<h2 class="subtitle">{{siteInfo.description}}</h2>
 			<div class="links">
@@ -13,17 +13,12 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-
 export default {
 	async asyncData({ params, app, payload, route, store }) {
 		let info = await import("~/content/setup/config.json");
 		return {
 			siteInfo: info
 		};
-	},
-	components: {
-		Logo
 	}
 };
 </script>
@@ -46,6 +41,12 @@ export default {
 	font-size: 100px;
 	color: #35495e;
 	letter-spacing: 1px;
+}
+
+.icon {
+	max-width: 250px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .subtitle {
