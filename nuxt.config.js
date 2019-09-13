@@ -44,11 +44,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // '@nuxtjs/pwa',
-    '@nuxtjs/markdownit',
-    '@bazzite/nuxt-netlify'
-  ],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/markdownit', '@bazzite/nuxt-netlify'],
 
   markdownit: {
     injected: true,

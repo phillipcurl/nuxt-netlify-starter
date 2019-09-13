@@ -22,6 +22,10 @@
 					class="button--grey"
 				>Netlify CMS Documentation</a>
 			</div>
+			<h4>
+				Built by
+				<a href="https://phillipcurl.com" target="_blank" rel="noopener noreferrer">PC</a>
+			</h4>
 		</div>
 	</div>
 </template>
@@ -61,7 +65,7 @@ export default {
 	margin: 0 auto;
 }
 .home-page__links {
-	display: flex;
+	/* display: flex; */
 	/* flex-direction: column; */
 }
 .home-page__links a {
@@ -71,5 +75,8 @@ export default {
 }
 .home-page__links a:hover {
 	text-decoration: underline;
+}
+.home-page h4 {
+	margin: 2rem 0;
 }
 </style>
