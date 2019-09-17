@@ -34,6 +34,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
 	async asyncData({ params, app, payload, route, store }) {
 		let info = await import("~/content/setup/config.json");
 		return {

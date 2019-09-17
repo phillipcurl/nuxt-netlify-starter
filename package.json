@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@bazzite/nuxt-netlify": "^0.1.1",
-    "@nuxtjs/markdownit": "github:syffs/nuxtv2-markdownit",
+    "@nuxtjs/markdownit": "^1.2.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0"
   },

@@ -1,11 +1,11 @@
-const siteInfo = require('./content/setup/config.json');
+const siteInfo = require('./assets/content/setup/config.json');
 console.log(siteInfo);
 const glob = require('glob');
 const path = require('path');
 
-// Enhance Nuxt's generate process by gathering all content files from Netifly CMS
-// automatically and match it to the path of your Nuxt routes.
-// The Nuxt routes are generate by Nuxt automatically based on the pages folder.
+// Add your dynamic routes here. This is intended for any route that
+// is not a direct route for the directory (e.g. /blog/index.vue, but
+// rather /blog/_slug.vue)
 const dynamicRoutes = getDynamicPaths({
   // '/blog': 'blog/posts/*.json',
 });
