@@ -57,7 +57,6 @@ export default {
   pwa: {
     icon: {
       iconSrc: `./static/${siteInfo.icon}`
-      // iconFileName: siteInfo.icon.replace(/^.*[\\\/]/, '')
     },
     manifest: {
       name: siteInfo.name,
@@ -115,7 +114,7 @@ function getDynamicPaths(urlFilepathTable) {
     ...Object.keys(urlFilepathTable).map(url => {
       const filepathGlob = urlFilepathTable[url];
       return glob
-        .sync(filepathGlob, { cwd: 'content' })
+        .sync(filepathGlob, { cwd: 'assets/content' })
         .map(filepath => `${url}/${path.basename(filepath, '.json')}/`);
     })
   );

@@ -40,7 +40,7 @@ export default {
     };
   },
 	async asyncData({ params, app, payload, route, store }) {
-		let info = await import("~/content/setup/config.json");
+		let info = await import("~/assets/content/setup/config.json");
 		return {
 			siteInfo: info
 		};
